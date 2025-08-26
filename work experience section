@@ -1,0 +1,9 @@
+<section class="secondsection">
+  <h1>Work Experience</h1>
+  <div class="box">
+    <div>HTML Developer</div>
+    <div>CSS Designer</div>
+    <div>Java Developer</div>
+    <div>MySQL</div>
+  </div>
+</section>
