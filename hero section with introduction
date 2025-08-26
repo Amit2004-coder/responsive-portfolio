@@ -1,6 +1,6 @@
 <section class="firstsection">
   <div>
-    Hi, my name is Amit! <br>
-    And I am a <span id="element"></span>
+    Hi my name is Amit <br>
+    and I am a passionate  <span id="element"></span>
   </div>
 </section>
