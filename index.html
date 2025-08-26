@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Portfolio</title>
+  <link rel="icon" href="amit.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(6, 5, 49);
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgb(27, 27, 82);
+      flex-wrap: wrap;
+    }
+
+    nav .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: rgb(80, 127, 167);
+    }
+
+    /* First Section */
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 60px auto;
+      max-width: 1100px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .leftsection {
+      font-size: 2.5rem;
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .rightsection {
+      flex: 1;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .rightsection img {
+      width: 70%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    #element {
+      color: rgb(80, 127, 167);
+    }
+
+    /* Work Experience */
+    .secondsection {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .secondsection h1 {
+      color: rgb(169, 167, 231);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .verticle {
+      background-color: #1e2b50;
+      padding: 20px;
+      border-radius: 10px;
+      width: 230px;
+      text-align: center;
+    }
+
+    .verticle img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .verticle-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #b0c7ff;
+    }
+
+    .verticle-desc {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0c2441;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .footer-second ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    .footer-second ul li {
+      margin: 5px 0;
+    }
+
+    .footer-second a {
+      color: rgb(56, 140, 224);
+      text-decoration: none;
+    }
+
+    .footer h4 {
+      margin-top: 15px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .firstsection {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .leftsection {
+        font-size: 2rem;
+      }
+
+      .rightsection img {
+        width: 60%;
+      }
+
+      .box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Welcome to my Portfolio</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Service</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi my name is Amit  <br>
+        <span>and I am a passionate </span>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="amit.png" alt="Amit">
+      </div>
+    </section>
+
+    <section class="secondsection">
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="verticle">
+          <img src="devloper.png" alt="">
+          <div class="verticle-title">HTML Developer</div>
+          <div class="verticle-desc">I build clean, responsive websites with modern HTML, CSS, and JS.</div>
+        </div>
+        <div class="verticle">
+          <img src="devloper.png" alt="">
+          <div class="verticle-title">CSS Designer</div>
+          <div class="verticle-desc">Expert in Flexbox, Grid, and reusable design components.</div>
+        </div>
+        <div class="verticle">
+          <img src="devloper.png" alt="">
+          <div class="verticle-title">Java Developer</div>
+          <div class="verticle-desc">Develop & maintain backend applications using Java & Spring Boot.</div>
+        </div>
+        <div class="verticle">
+          <img src="devloper.png" alt="">
+          <div class="verticle-title">MySQL</div>
+          <div class="verticle-desc">Designing and managing efficient databases with MySQL.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-first">
+      <h3>Amit Developer Portfolio</h3>
+      <p>I am Amit Kumar, a passionate learner, creative thinker, tech enthusiast, aspiring developer, and dedicated to achieving personal and professional growth.</p>
+      <div class="footer-second">
+        <ul>
+          <li>Contact: +91 9110170260</li>
+          <li>Follow me :
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a> |
+            <a href="https://www.instagram.com/amiit_.08?igsh=MXQzNmQwZngzODhhNQ==">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <h4>© 2025 YourWebsite | All Rights Reserved</h4>
+    </div>
+  </footer>
+
+  <!-- Typed.js Effect -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphics Designer', 'Web Designer', 'Video Editor', 'Logic Builder'],
+      typeSpeed: 85,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>
